@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Restaurant Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🍽️ Smart Restaurant</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#booking">Book Table</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<section class="image-row">
+
+    <div class="box">
+        <h2>Restaurant</h2>
+        <img src="image/restaurant.png" alt="Restaurant">
+    </div>
+    <section class="chef-section">
+    <h2>Our Master Chef</h2>
+
+    <img src="image/chef.jpg" alt="Master Chef" class="chef-image">
+
+    <p>
+        Our experienced chef prepares delicious and healthy dishes
+        with fresh ingredients and authentic flavors.
+    </p>
+</section>
+
+</section>
+
+<main>
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p>Book your table easily online</p>
+</section>
+
+<section id="menu">
+    <h2>Menu</h2>
+
+    <div class="menu">
+        <article>
+            <img src="image/pizza.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>₹299</p>
+        </article>
+    
+        <article>
+            <img src="image/burger.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p>₹199</p>
+        </article>
+    
+        <article>
+            <img src="image/pasta.jpg" alt="Pasta">
+            <h3>Pasta</h3>
+            <p>₹249</p>
+        </article>
+    </div>
+    
+</section>
+
+<section id="booking">
+    <h2>Book Table</h2>
+
+    <form onsubmit="bookTable(event)">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="number" id="phone" placeholder="Phone" required>
+        <input type="date" id="date" required>
+        <input type="number" id="guests" placeholder="Guests" required>
+        <button type="submit">Book Now</button>
+    </form>
+
+    <p id="msg"></p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Smart Restaurant</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
